@@ -1,0 +1,142 @@
+﻿/*Body*/
+body {
+    background-color: snow;
+    font-family: 'Monrserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/*Foto*/
+.foto {
+    margin-top: 120px;
+    margin-left: 100px;
+    width: 500px;
+    height: 600px;
+    background: url(/Content/Images/20200505_094520[1].jpg);
+}
+
+/*Hero*/
+.hero_head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px dotted #222;
+    margin-bottom: 20px;
+}
+
+.hero_head-title {
+}
+
+.hero_head-img {
+    display: block;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+
+/* Intro */
+.intro {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    width: 100%;
+    height: 100vh;
+    /*background: url(/Content/Images/facebook-logo-png-2320.png) center
+        no-repeat;*/
+    background-size: cover;
+    line-height: 1;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /*text-align:left;*/
+}
+
+.intro_title {
+    text-align: center;
+}
+
+/* Header*/
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+/*Hav*/
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+    .nav_link:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav_link:hover {
+        color: black;
+    }
+
+        .nav_link:hover:after {
+            display: block;
+        }
